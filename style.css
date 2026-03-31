@@ -1,3 +1,9 @@
+/* ============================================
+   Educational Technology Website Stylesheet
+   Arabic RTL Layout - No Frameworks
+   ============================================ */
+
+/* CSS Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +11,7 @@
 }
 
 :root {
+    /* Color Palette - Academic Theme */
     --primary-color: #3b82f6;
     --primary-dark: #1d4ed8;
     --primary-light: #dbeafe;
@@ -43,6 +50,9 @@ body {
     min-height: 100vh;
 }
 
+/* ============================================
+   Navigation Styles
+   ============================================ */
 .navbar {
     background: var(--gradient-primary);
     padding: 0;
@@ -103,6 +113,7 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
+/* Dropdown Menu */
 .dropdown {
     position: relative;
 }
@@ -172,6 +183,7 @@ body {
     font-size: 0.9rem;
 }
 
+/* Mobile Menu Toggle - Pure CSS Checkbox Hack */
 .mobile-toggle {
     display: none;
 }
@@ -190,6 +202,9 @@ body {
     display: none;
 }
 
+/* ============================================
+   Hero Section
+   ============================================ */
 .hero {
     background: var(--gradient-hero);
     padding: 80px 20px;
@@ -241,6 +256,9 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* ============================================
+   Container & Layout
+   ============================================ */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -279,6 +297,9 @@ body {
     margin-bottom: 50px;
 }
 
+/* ============================================
+   Cards Grid
+   ============================================ */
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -385,6 +406,9 @@ body {
     font-weight: 700;
 }
 
+/* ============================================
+   Content Page Styles
+   ============================================ */
 .page-header {
     background: var(--gradient-primary);
     padding: 60px 20px;
@@ -481,6 +505,7 @@ body {
     font-weight: 700;
 }
 
+/* Definition Box */
 .definition-box {
     background: linear-gradient(135deg, #dbeafe 0%, #ede9fe 100%);
     border-radius: var(--border-radius);
@@ -589,6 +614,7 @@ body {
     font-size: 0.8rem;
 }
 
+/* Timeline */
 .timeline {
     position: relative;
     padding: 20px 0;
@@ -630,6 +656,7 @@ body {
     font-size: 1.2rem;
 }
 
+/* Examples Box */
 .examples-box {
     background: var(--bg-light);
     border-radius: var(--border-radius);
@@ -643,6 +670,7 @@ body {
     margin-bottom: 15px;
 }
 
+/* Project Card */
 .project-card {
     background: white;
     border-radius: var(--border-radius);
@@ -683,6 +711,7 @@ body {
     font-weight: 500;
 }
 
+/* Scenario Section */
 .scenario-section {
     background: linear-gradient(135deg, #f0f9ff 0%, #faf5ff 100%);
     border-radius: var(--border-radius-lg);
@@ -712,6 +741,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Country Flags */
 .country-item {
     display: flex;
     align-items: flex-start;
@@ -732,6 +762,7 @@ body {
     color: var(--text-dark);
 }
 
+/* Standards List */
 .standards-list {
     list-style: none;
     padding: 0;
@@ -753,6 +784,9 @@ body {
     color: var(--primary-color);
 }
 
+/* ============================================
+   Footer
+   ============================================ */
 .footer {
     background: var(--text-dark);
     color: white;
@@ -783,6 +817,9 @@ body {
     font-size: 0.9rem;
 }
 
+/* ============================================
+   Breadcrumb
+   ============================================ */
 .breadcrumb {
     background: var(--bg-light);
     padding: 15px 20px;
@@ -823,6 +860,9 @@ body {
     color: var(--text-light);
 }
 
+/* ============================================
+   Responsive Design
+   ============================================ */
 @media (max-width: 1024px) {
     .nav-container {
         flex-wrap: wrap;
@@ -840,6 +880,7 @@ body {
         padding: 10px;
     }
 
+    /* Checkbox hack for mobile menu - Pure CSS */
     #mobile-menu-toggle:checked ~ .nav-menu {
         display: flex;
     }
@@ -944,6 +985,9 @@ body {
     }
 }
 
+/* ============================================
+   Print Styles
+   ============================================ */
 @media print {
     .navbar,
     .mobile-toggle {
@@ -968,6 +1012,9 @@ body {
     }
 }
 
+/* ============================================
+   Utility Classes
+   ============================================ */
 .text-center {
     text-align: center;
 }
@@ -1000,4 +1047,87 @@ body {
     content: 'ملاحظة: ';
     font-weight: 700;
     color: #b45309;
+}
+
+/* ============================================
+   Audio Player Styles
+   ============================================ */
+.audio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.audio-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(135deg, #dbeafe 0%, #ede9fe 100%);
+    border-radius: var(--border-radius-lg);
+    padding: 20px 25px;
+    margin: 30px 0;
+    border-right: 4px solid var(--primary-color);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.audio-wrapper:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.audio-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.audio-label {
+    font-weight: 600;
+    color: var(--primary-dark);
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.audio-player {
+    flex: 1;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.audio-player::-webkit-media-controls-panel {
+    background: white;
+    border-radius: 20px;
+}
+
+/* Responsive Audio Player */
+@media (max-width: 768px) {
+    .audio-wrapper {
+        flex-wrap: wrap;
+        padding: 15px 20px;
+    }
+
+    .audio-label {
+        font-size: 0.9rem;
+    }
+
+    .audio-player {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .audio-wrapper {
+        padding: 12px 15px;
+        gap: 10px;
+    }
+
+    .audio-icon {
+        font-size: 1.5rem;
+    }
+
+    .audio-label {
+        font-size: 0.85rem;
+    }
 }
