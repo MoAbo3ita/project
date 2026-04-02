@@ -1,9 +1,3 @@
-/* ============================================
-   Educational Technology Website Stylesheet
-   Arabic RTL Layout - No Frameworks
-   ============================================ */
-
-/* CSS Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +5,6 @@
 }
 
 :root {
-    /* Color Palette - Academic Theme */
     --primary-color: #3b82f6;
     --primary-dark: #1d4ed8;
     --primary-light: #dbeafe;
@@ -50,9 +43,7 @@ body {
     min-height: 100vh;
 }
 
-/* ============================================
-   Navigation Styles
-   ============================================ */
+
 .navbar {
     background: var(--gradient-primary);
     padding: 0;
@@ -113,7 +104,6 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Dropdown Menu */
 .dropdown {
     position: relative;
 }
@@ -202,9 +192,6 @@ body {
     display: none;
 }
 
-/* ============================================
-   Hero Section
-   ============================================ */
 .hero {
     background: var(--gradient-hero);
     padding: 80px 20px;
@@ -256,9 +243,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* ============================================
-   Container & Layout
-   ============================================ */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -297,9 +282,7 @@ body {
     margin-bottom: 50px;
 }
 
-/* ============================================
-   Cards Grid
-   ============================================ */
+
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -406,9 +389,7 @@ body {
     font-weight: 700;
 }
 
-/* ============================================
-   Content Page Styles
-   ============================================ */
+
 .page-header {
     background: var(--gradient-primary);
     padding: 60px 20px;
@@ -520,7 +501,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* Info Grid */
 .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -784,9 +764,7 @@ body {
     color: var(--primary-color);
 }
 
-/* ============================================
-   Footer
-   ============================================ */
+
 .footer {
     background: var(--text-dark);
     color: white;
@@ -817,9 +795,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* ============================================
-   Breadcrumb
-   ============================================ */
+
 .breadcrumb {
     background: var(--bg-light);
     padding: 15px 20px;
@@ -860,9 +836,7 @@ body {
     color: var(--text-light);
 }
 
-/* ============================================
-   Responsive Design
-   ============================================ */
+
 @media (max-width: 1024px) {
     .nav-container {
         flex-wrap: wrap;
@@ -880,7 +854,6 @@ body {
         padding: 10px;
     }
 
-    /* Checkbox hack for mobile menu - Pure CSS */
     #mobile-menu-toggle:checked ~ .nav-menu {
         display: flex;
     }
@@ -985,9 +958,6 @@ body {
     }
 }
 
-/* ============================================
-   Print Styles
-   ============================================ */
 @media print {
     .navbar,
     .mobile-toggle {
@@ -1012,9 +982,7 @@ body {
     }
 }
 
-/* ============================================
-   Utility Classes
-   ============================================ */
+
 .text-center {
     text-align: center;
 }
@@ -1049,9 +1017,6 @@ body {
     color: #b45309;
 }
 
-/* ============================================
-   Audio Player Styles
-   ============================================ */
 .audio-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1100,7 +1065,6 @@ body {
     border-radius: 20px;
 }
 
-/* Responsive Audio Player */
 @media (max-width: 768px) {
     .audio-wrapper {
         flex-wrap: wrap;
