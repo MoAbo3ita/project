@@ -173,7 +173,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Mobile Menu Toggle - Pure CSS Checkbox Hack */
 .mobile-toggle {
     display: none;
 }
